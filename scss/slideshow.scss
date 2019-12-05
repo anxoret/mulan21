@@ -1,0 +1,41 @@
+.slideshow_simple-theme {
+    margin-top: 20px;
+}
+
+.slideshow__slides_simple-theme {
+    position: relative;
+    height: 300px;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+ 
+.slideshow__slide_simple-theme {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 1s;
+
+    font-size: 40px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: #333;
+    color: #fff;
+
+    &:nth-of-type(odd) {
+        background-color: pink;
+    }
+
+    &:nth-of-type(even) {
+        background-color: greenyellow;
+    }
+}
+ 
+.slideshow__slide_show {
+    opacity: 1;
+    z-index: 2;
+}

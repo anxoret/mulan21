@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap&subset=cyrillic');
+@import "variables";
+@import "slideshow";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content-wrapper_simple-theme {
+    margin: 10px auto;
+    width: 90%;
+}
+
+.header_simple-theme {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.header__wrapper_simple-theme {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.header__h1_simple-theme,
+.header__span_simple-theme {
+    font-size: 18px;
+}
+
+.header__phone-number_simple-theme .header__link_simple-theme {
+    font-size: 30px;
+}
+
+.header__link_simple-theme {
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.header__logo_simple-theme {
+    display: flex;
+    align-items: flex-end;
+    height: 95px;
+    .header__img_simple-theme {
+        width: 300px;
+    }
+}
+
+.header__phone_simple-theme {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    .header__img_simple-theme {
+        width: 30px;
+    }
+}
+
+.header__button_simple-theme {
+    margin-top: 10px;
+    width: 250px;
+    height: 50px;
+    color: white;
+    font-weight: bold;
+    background-color: $buttonBackgroundColor;
+    border: none;
+    border-radius: 30px;
+}
