@@ -16,5 +16,5 @@ const showNextSlide = () => {
     
 };
 
-let slideInterval = setInterval(showNextSlide, 3000);
+let slideInterval = setInterval(showNextSlide, 4000);
 

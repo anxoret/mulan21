@@ -4,7 +4,7 @@
 
 .slideshow__slides_simple-theme {
   position: relative;
-  height: 300px;
+  height: 400px;
   padding: 0px;
   margin: 0px;
   list-style-type: none; }
@@ -21,7 +21,6 @@
   -o-transition: opacity 1s;
   transition: opacity 1s;
   font-size: 40px;
-  padding: 40px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background: #333;
@@ -40,16 +39,19 @@
   padding: 0;
   font-size: 16px;
   margin: 0 auto;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  color: black; }
 
 .content-wrapper_simple-theme {
   margin: 10px auto;
-  width: 90%; }
+  width: 90%;
+  max-width: 1920px; }
 
 .header_simple-theme {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
@@ -65,17 +67,29 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 70%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end; }
 
 .header__h1_simple-theme,
 .header__span_simple-theme {
-  font-size: 18px; }
+  line-height: 36px;
+  font-size: 24px; }
+
+.header__phone_simple-theme {
+  width: 30%; }
+
+.header__phone-number_simple-theme {
+  margin: 0;
+  padding: 0; }
 
 .header__phone-number_simple-theme .header__link_simple-theme {
   font-size: 30px; }
@@ -90,11 +104,16 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
-  height: 95px; }
+  margin: 0;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
   .header__logo_simple-theme .header__img_simple-theme {
+    margin: 0;
+    padding: 0;
     width: 300px; }
 
 .header__phone_simple-theme {
@@ -120,3 +139,39 @@
   background-color: #ff0000;
   border: none;
   border-radius: 30px; }
+
+.slide_simple-theme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly; }
+
+.slide__img-container_simple-theme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  width: 50%;
+  background-color: brown; }
+
+.slide__img_simple-theme {
+  height: 400px; }
+
+.slide__info-container_simple-theme {
+  width: 50%;
+  background-color: cadetblue; }
+
+.slide__li_simple-theme {
+  list-style-position: inside; }
